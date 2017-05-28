@@ -1,0 +1,183 @@
+/***************************
+BASE
+***************************/
+
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+body {
+  line-height: 1.4;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+/***************************
+HEADER
+***************************/
+
+header {
+  height: 30rem;
+  background: url("../images/glasses-bg.png") no-repeat;
+  background-size: contain;
+}
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: cadetblue;
+  color: white;
+  position: relative;
+  top: 1rem;
+}
+
+.logo {
+  display: flex;
+  padding: 1rem 0;
+  margin-left: 2rem;
+}
+
+.logo img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+nav span {
+  display: inline-block;
+  margin: 1rem 2rem 1rem 0;
+}
+
+.menu {
+  display: none;
+}
+
+#banner h1 {
+  padding: 1.5rem 5rem;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  display: inline-block;
+  float: right;
+}
+
+/***************************
+MAIN CONTENT
+***************************/
+
+/* SERVICES */
+
+#services {
+  display: flex;
+  justify-content: center;
+  margin: 3rem 0;
+}
+
+#services .item {
+  height: 8rem;
+  width: 5rem;
+  margin-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#services .item:last-of-type {
+  margin-right: 0
+}
+
+.item-1 img {
+  width: 3.4rem;
+}
+
+.item-2 img {
+  width: 5rem;
+}
+
+.item-3 img {
+  width: 5rem;
+}
+
+/* MAIN CONTENT */
+
+.main-content-item {
+  float: left;
+  margin-right: 5%;
+  width: 35%;
+  margin-bottom: 5rem;
+}
+
+.main-content-item h3 {
+  font-weight: bold;
+  background-color: cadetblue;
+  padding: 0.5rem 1.25rem;
+  width: 10rem;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/***************************
+FOOTER
+***************************/
+
+footer {
+  clear: both;
+  background-color: azure;
+}
+
+#footer-item {
+  padding: 4rem;
+  display: flex;
+}
+
+#footer-item img {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+/***************************
+MEDIA QUERY
+***************************/
+
+/* Tablet screen (1024px) */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    margin: 0;
+  }
+
+  header {
+    height: 22rem;
+  }
+
+  .top-header {
+    top: 0rem;
+    width: 100%;
+  }
+
+  #banner h1 {
+    padding: 0.75rem 4rem;
+    font-size: 1.33rem;
+    top: 5rem;
+    margin-right: 4rem;
+  }
+
+  #main-content {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+/* Mobile screen (470px) */
+@media only screen and (max-width: 470px) {
+
+}
