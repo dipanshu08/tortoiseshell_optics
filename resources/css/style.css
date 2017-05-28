@@ -21,9 +21,9 @@ HEADER
 ***************************/
 
 header {
-  height: 30rem;
+  min-height: 30rem;
   background: url("../images/glasses-bg.png") no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .top-header {
@@ -117,6 +117,10 @@ MAIN CONTENT
 }
 
 .main-content-item h3 {
+  color: white;
+}
+
+.main-content-item h3 {
   font-weight: bold;
   background-color: cadetblue;
   padding: 0.5rem 1.25rem;
@@ -156,7 +160,7 @@ MEDIA QUERY
   }
 
   header {
-    height: 22rem;
+    min-height: 22rem;
   }
 
   .top-header {
@@ -178,6 +182,74 @@ MEDIA QUERY
 }
 
 /* Mobile screen (470px) */
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 650px) {
+  header {
+    min-height: 17rem;
+  }
 
+  .logo span,
+  .main-nav {
+    display: none;
+  }
+
+  .menu {
+    display: inline-block;
+  }
+
+  #banner h1 {
+    padding: 1rem 0;
+    margin: 0;
+    width: 100%;
+    top: 9rem;
+    left: 0;
+    font-size: 1rem;
+    float: none;
+    text-align: center
+  }
+
+  #services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  #services .item {
+    font-size: 0.77rem;
+    margin: 1.54rem 0;
+    justify-content: flex-start;
+    height: auto;
+  }
+
+  #services .item p {
+    margin-top: 1rem;
+  }
+
+  #main-content {
+    display: block;
+  }
+
+  .main-content-item {
+    width: 100%;
+    float: none;
+    margin-bottom: 4rem;
+  }
+
+  .main-content-item h3 {
+    width: 100%;
+    text-align: center;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .main-content-item p {
+    font-size: 0.77rem;
+  }
+
+  #footer-item span {
+    display: none;
+  }
+
+  #footer-item img {
+    margin: 0 auto;
+  }
 }
