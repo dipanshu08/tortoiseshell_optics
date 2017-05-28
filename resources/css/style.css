@@ -243,6 +243,7 @@ MEDIA QUERY
 
   .main-content-item p {
     font-size: 0.77rem;
+    margin-left: 0.5rem;
   }
 
   #footer-item span {
